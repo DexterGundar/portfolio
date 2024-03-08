@@ -1,0 +1,57 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "src": "./img/product-chain-1.png",
+            "title": "Front-End",
+            "description": "Html, CSS, Javascript, React.js"
+            
+        },
+        {
+            "id": "2",
+            "src": "./img/tag-1.png",
+            "title": "Back-End",
+            "description": "SQL, PSQL, Express, Axios, Supabase, Node.js"
+            
+        },
+        {
+            "id": "3",
+            "src": "./img/feather-pen-2.png",
+            "title": "Testing",
+            "description": "Jest, Supertest, TDD"
+            
+        }
+        ,
+        {
+            "id": "4",
+            "src": "./img/feather-pen-1.png",
+            "title": "Other",
+            "description": "SPA, OOP, Agile, Trello, Scrum, KANBAN and pair programming."
+            
+        }
+    ],
+    "portfolio": [
+        {
+            "id": "1",
+            "src": "./img/placeholder-image.png",
+            "title": "News Service",
+            "description": "NC News front-end news site",
+            "link": "https://leafy-halva-01affb.netlify.app/"
+            
+        },
+        {
+            "id": "2",
+            "src": "./img/placeholder-image-1.png",
+            "title": "News Service Backend",
+            "description": "NC News Service back-end server",
+            "link": "https://news-service-alcf.onrender.com/api"
+        },
+        {
+            "id": "3",
+            "src": "./img/placeholder-image-2.png",
+            "title": "Just A table",
+            "description": "Lorem ipsum dolor  elit. Sumentum tristique.",
+            "link": "https://genuine-salamander-dc9f1b.netlify.app/tabula"
+        }
+    ]
+}
