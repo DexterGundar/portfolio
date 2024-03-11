@@ -185,6 +185,9 @@ h3 {
 .navbar--active-content {
   color: var(--primary);
 }
+.resp--logo {
+  max-width: 15vw;
+}
 /* Navbar Style Ends */
 /* Hero section style */
 
