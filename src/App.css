@@ -585,6 +585,9 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
   }
+  .skills--section--card {
+    min-width: 70vw;
+  }
   .skills--section,
   .portfolio--container,
   .hero--section--content,
