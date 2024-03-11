@@ -11,7 +11,7 @@
             "id": "2",
             "src": "./img/tag-1.png",
             "title": "Back-End",
-            "description": "SQL, PSQL, Express, Axios, Supabase, Node.js"
+            "description": "SQL, PostgreSQL, Express, Axios, Supabase, Node.js"
             
         },
         {
