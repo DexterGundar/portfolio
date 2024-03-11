@@ -9,8 +9,7 @@ export default function MyPortfolio() {
           <p className="sub--title">Recent Projects</p>
           <h2 className="section--heading">My Portfolio</h2>
           <iframe
-            width="560"
-            height="315"
+            max-width="1600"
             src="https://www.youtube.com/embed/5ARJNQD2hhU?si=THhUsaIVqgUmrXHX"
             title="YouTube video player"
             frameborder="0"

@@ -10,9 +10,12 @@ export default function HeroSection() {
             Developer
           </h1>
           <p className="hero--section-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <br />
-            Magnam excepturi repellat eligendi impedit quasi.
+            I am taking on an exciting transition into the tech industry. My
+            background has equipped me with valuable skills in teamwork and
+            problem-solving. I am now looking to use these skills and further my
+            knowledge by joining a team as a junior.
+            {/* in order for me to advance
+            in the tech industry. */}
           </p>
         </div>
         <button className="btn btn-primary"> Get In Touch</button>

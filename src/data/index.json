@@ -36,22 +36,22 @@
             "src": "./img/placeholder-image.png",
             "title": "News Service",
             "description": "NC News front-end news site",
-            "link": "https://leafy-halva-01affb.netlify.app/"
+            "link": "https://thebestestnews.netlify.app"
             
         },
         {
             "id": "2",
-            "src": "./img/placeholder-image-1.png",
+            "src": "./img/News-BE-Service.png",
             "title": "News Service Backend",
             "description": "NC News Service back-end server",
             "link": "https://news-service-alcf.onrender.com/api"
         },
         {
             "id": "3",
-            "src": "./img/placeholder-image-2.png",
+            "src": "./img/just-a-table.png",
             "title": "Just A table",
             "description": "Lorem ipsum dolor  elit. Sumentum tristique.",
-            "link": "https://genuine-salamander-dc9f1b.netlify.app/tabula"
+            "link": "https://justatable.netlify.app/tabula"
         }
     ]
 }
