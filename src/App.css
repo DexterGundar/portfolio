@@ -569,6 +569,7 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 70px;
+    text-align: center;
   }
   .hero--section--title,
   .hero--section-description,
