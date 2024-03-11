@@ -8,16 +8,8 @@ export default function MyPortfolio() {
         <div className="portfolio--container">
           <p className="sub--title">Recent Projects</p>
           <h2 className="section--heading">My Portfolio</h2>
-          <iframe
-            max-width="1600"
-            src="https://www.youtube.com/embed/5ARJNQD2hhU?si=THhUsaIVqgUmrXHX"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
         </div>
-        <div>
+        {/* <div>
           <Link to="https://github.com/DexterGundar" className="btn btn-github">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,8 +27,18 @@ export default function MyPortfolio() {
             </svg>
             Visit My GitHub
           </Link>
-        </div>
+        </div> */}
       </div>
+      <div className="portfolio--section--container">
+        <iframe
+          className="youtube--video"
+          src="https://www.youtube.com/embed/5ARJNQD2hhU?si=THhUsaIVqgUmrXHX"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+        ></iframe>
+      </div>
+
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
           <div key={index} className="portfolio--section--card">
@@ -50,6 +52,7 @@ export default function MyPortfolio() {
                   <p className="text.md">{item.description}</p>
                 </div>
                 <p className="text-sm portfolio--link">
+                  Live
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
