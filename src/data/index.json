@@ -33,7 +33,7 @@
     "portfolio": [
         {
             "id": "1",
-            "src": "./img/placeholder-image.png",
+            "src": "./img/news-front-end.png",
             "title": "News Service",
             "description": "NC News front-end news site",
             "link": "https://thebestestnews.netlify.app"
@@ -41,7 +41,7 @@
         },
         {
             "id": "2",
-            "src": "./img/News-BE-Service.png",
+            "src": "./img/news-back-end.png",
             "title": "News Service Backend",
             "description": "NC News Service back-end server",
             "link": "https://news-service-alcf.onrender.com/api"
