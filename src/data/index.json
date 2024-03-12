@@ -50,7 +50,7 @@
             "id": "3",
             "src": "./img/just-a-table.png",
             "title": "Just A table",
-            "description": "Lorem ipsum dolor  elit. Sumentum tristique.",
+            "description": "Interactive table with pagination and search",
             "link": "https://justatable.netlify.app/tabula"
         }
     ]

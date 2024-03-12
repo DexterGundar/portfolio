@@ -198,7 +198,7 @@ h3 {
 .hero--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 133.333px;
+  padding: 145.333px 85.333px 133.333px;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
@@ -331,16 +331,11 @@ h3 {
 /* About Us Ends */
 /* My Portfolio Starts */
 
-.youtube--video {
-  width: 600px;
-  height: 300px;
-}
-
 .portfolio--section {
   display: flex;
   padding: 112px 85px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 80px;
 }
 .portfolio--container-box {
@@ -402,6 +397,34 @@ h3 {
   padding-bottom: 10.6px;
   font-weight: 600;
 }
+
+.portfolio--section-twitch {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.twitch-container {
+  width: 50vw;
+  margin-top: 2%;
+  text-align: center;
+}
+.twitch--link {
+  margin-top: 2%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 10.6px;
+  font-weight: 600;
+}
+
+.youtube--video {
+  width: 600px;
+  height: 300px;
+  margin-top: 2%;
+}
+
 .portfolio--section--card:hover path {
   stroke: #006b6a;
 }
@@ -526,7 +549,7 @@ input[type="checkbox"] {
 }
 .footer--content--container {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   align-self: stretch;
 }
@@ -577,10 +600,7 @@ input[type="checkbox"] {
   .btn-outline-primary {
     display: none;
   }
-  .youtube--video {
-    width: 300px;
-    height: 150px;
-  }
+
   .hero--section {
     display: flex;
     flex-direction: column-reverse;
@@ -614,6 +634,15 @@ input[type="checkbox"] {
   .portfolio--container-box {
     gap: 30px;
   }
+  .twitch-container {
+    width: 100%;
+  }
+
+  .youtube--video {
+    width: 300px;
+    height: 150px;
+  }
+
   .skills--section,
   .testimonial--section,
   .contact--section,
@@ -654,6 +683,13 @@ input[type="checkbox"] {
   }
   .divider {
     margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero--section-description {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

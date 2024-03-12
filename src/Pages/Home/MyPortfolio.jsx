@@ -6,7 +6,7 @@ export default function MyPortfolio() {
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <p className="sub--title">Recent Projects</p>
+          {/* <p className="sub--title">Recent Projects</p> */}
           <h2 className="section--heading">My Portfolio</h2>
         </div>
         {/* <div>
@@ -29,7 +29,10 @@ export default function MyPortfolio() {
           </Link>
         </div> */}
       </div>
-      <div className="portfolio--section--container">
+
+      <div className="portfolio--section-twitch">
+        <h3>Watch, Play, Profit!</h3>
+
         <iframe
           className="youtube--video"
           src="https://www.youtube.com/embed/5ARJNQD2hhU?si=THhUsaIVqgUmrXHX"
@@ -37,6 +40,35 @@ export default function MyPortfolio() {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
         ></iframe>
+        <p className="text-sm twitch--link">
+          <a href="https://northcoders.com/project-phase/twitch-shares">
+            Twitch Shares{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 20 19"
+              fill="none"
+            >
+              <path
+                d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                stroke="currentColor"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </p>
+        <div className="twitch-container">
+          Inspiration was taken from a Twitter hashtag trading app, that has
+          been discontinued a while ago. Twitch seemed like a fun API to use and
+          has data that updates frequently and is reliable source. Users
+          register for the app and using their starting balance invest in the
+          games, which change in value based on viewership on Twitch. Users then
+          can buy or sell more shares to try to make a profit and join leagues
+          with friends to compete who is better at trading.
+        </div>
       </div>
 
       <div className="portfolio--section--container">
