@@ -1,16 +1,47 @@
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function ContactMe() {
+  const [emailSent, setEmailSent] = useState(false);
+  const form = useRef();
+
+  const validatePhone = (e) => {
+    let phone = e.target.value;
+    // console.log(phone);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setEmailSent(true);
+    emailjs
+      .sendForm("service_0oyt6sh", "template_ol63fso", form.current, {
+        publicKey: "qAXNuPrcckqI_70nQ",
+      })
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section id="Contact" className="contact--section">
       <div>
         <p className="sub--title"></p>
         <h2>Contact Me</h2>
         <p className="text-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut dolorum,
-          mollitia enim minus facilis facere animi laborum aliquam dolore
-          necessitatibus?
+          To get in touch please use Get In Touch from home, LinkedIn link from
+          footer or fill in this form and submit:
         </p>
       </div>
-      <form className="contact--form--container">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="contact--form--container"
+      >
         <div className="container">
           <label htmlFor="first-name" className="contact--label">
             <span className="text-md">First Name</span>
@@ -43,17 +74,18 @@ export default function ContactMe() {
             />
           </label>
           <label htmlFor="phone-number" className="contact--label">
-            <span className="text-md">phone-number</span>
+            <span className="text-md">Phone number</span>
             <input
-              type="number"
+              type="tel"
               className="contact--input text-md"
               name="phone-number"
               id="phone-number"
               required
+              onChange={(e) => validatePhone(e)}
             />
           </label>
         </div>
-        <label htmlFor="choose-topic" className="contact--label">
+        {/* <label htmlFor="choose-topic" className="contact--label">
           <span className="text-md">Choose a Topic</span>
           <select id="choose-topic" className="contact--input text-md">
             <option value="">Select One</option>
@@ -61,11 +93,12 @@ export default function ContactMe() {
             <option value="">Item 2</option>
             <option value="">Item 3</option>
           </select>
-        </label>
+        </label> */}
         <label htmlFor="message" className="contact--label">
           <span className="text-md">Message</span>
           <textarea
             className="contact--input text-md"
+            name="message"
             id="message"
             rows="8"
             placeholder="Type your message..."
@@ -76,7 +109,16 @@ export default function ContactMe() {
           <span className="text-sm"> I accept the terms</span>
         </label>
         <div>
-          <button className="btn btn-primary contact--form-btn">Submit</button>
+          <button
+            disabled={emailSent}
+            className="btn btn-primary contact--form-btn"
+          >
+            Submit
+          </button>
+          <p className="skills--section--heading">
+            {" "}
+            {emailSent ? `E-mail sent` : ""}
+          </p>
         </div>
       </form>
     </section>

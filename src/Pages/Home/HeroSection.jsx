@@ -9,16 +9,11 @@ export default function HeroSection() {
             <br />
             Developer
           </h1>
-          <p className="hero--section-description">
-            I am taking on an exciting transition into the tech industry. My
-            background has equipped me with valuable skills in teamwork and
-            problem-solving. I am now looking to use these skills and further my
-            knowledge by joining a team as a junior.
-            {/* in order for me to advance
-            in the tech industry. */}
-          </p>
+          <p className="hero--section-description"></p>
         </div>
-        <button className="btn btn-primary"> Get In Touch</button>
+        <a href="mailto:gundar.geida@gmail.com?subject=From portfolio page">
+          <button className="btn btn-primary"> Get In Touch</button>
+        </a>
       </div>
       <div className="hero--section--img">
         <img src="./img/hero_img.png" alt="Hero Section" />
