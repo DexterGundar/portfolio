@@ -4,14 +4,14 @@
             "id": "1",
             "src": "./img/product-chain-1.png",
             "title": "Front-End",
-            "description": "Html, CSS, Javascript, React.js"
+            "description": "Html, CSS, Javascript, React.js, PHP"
             
         },
         {
             "id": "2",
             "src": "./img/tag-1.png",
             "title": "Back-End",
-            "description": "SQL, PostgreSQL, Express, Axios, Supabase, Node.js"
+            "description": "JavaScript, PHP, SQL, PostgreSQL, Express, Axios, Supabase, Node.js"
             
         },
         {

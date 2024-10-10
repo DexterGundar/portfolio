@@ -7,7 +7,6 @@ export default function ContactMe() {
 
   const validatePhone = (e) => {
     let phone = e.target.value;
-    // console.log(phone);
   };
 
   const sendEmail = (e) => {
@@ -85,15 +84,7 @@ export default function ContactMe() {
             />
           </label>
         </div>
-        {/* <label htmlFor="choose-topic" className="contact--label">
-          <span className="text-md">Choose a Topic</span>
-          <select id="choose-topic" className="contact--input text-md">
-            <option value="">Select One</option>
-            <option value="">Item 1</option>
-            <option value="">Item 2</option>
-            <option value="">Item 3</option>
-          </select>
-        </label> */}
+
         <label htmlFor="message" className="contact--label">
           <span className="text-md">Message</span>
           <textarea
